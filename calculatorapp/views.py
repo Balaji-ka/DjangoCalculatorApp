@@ -36,6 +36,9 @@ def submitquery(request):
            ans=1/math.tan(math.radians(float(q[4:-1])))
         elif q[:3]=="log" or q[:3]=="Log":
            ans=math.log10(int(q[4:-1]))
+        else:
+            ans=eval(q)
+                    
 
         dic={
             "q":q,
