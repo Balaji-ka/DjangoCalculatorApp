@@ -1,1 +1,1 @@
-web: gunicorn djangocalculator.wsgi --log-file -
+web: gunicorn djangoprojects.wsgi --log-file -
